@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: courseContainer
+    restart: always
+    environment:
+      POSTGRES_USER: ecl1pse752
+      POSTGRES_PASSWORD: j9wrsqlau1a5h46
+      POSTGRES_DB: courseDB
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+volumes:
+  postgres_data:

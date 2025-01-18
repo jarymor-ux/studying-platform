@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdc:postgresql://localhost:5432/courseDB
+    username: ecl1pse752
+    password: j9wrsqlau1a5h46
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    dialect: org.hibernate.dialect.PostgreSQLDialect
